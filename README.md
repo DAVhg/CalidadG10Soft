@@ -1,0 +1,1 @@
+# CalidadG10Soft
