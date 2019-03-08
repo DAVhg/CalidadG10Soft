@@ -42,9 +42,8 @@ addons:
     organization: "karollisowski-github" # the key of the org you chose at step #3
     token:
       secure: •••••••••••••••• # encrypted value of your token
-script:
-  # other script steps might be done before running the actual analysis
-  - sonar-scanner
+
+ 
   
 before_script:
 - sdkmanager --list
@@ -56,7 +55,7 @@ before_script:
 script:
 script:
   # other script steps might be done before running the actual analysis
-       
+        - sonar-scanner
         - ./gradlew clean
         - ./gradlew assembleDebug
         - ./gradlew assembleDebugAndroidTest
