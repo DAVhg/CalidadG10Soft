@@ -23,7 +23,7 @@ All these are done with admin authentication
 Show categories
 ----------
 
-Allows to show every category with its information.
+Allows to show every category.
 
 URL:
 < /login >
@@ -32,21 +32,11 @@ Method:
 GET
 
 Success Response:
- {
-     "id": 1,
-     "name": "User",
-     "email": "email@hotmail.es",
-     "level": 1,
-     "points": 0,
-     "streak": 0,
-     "fluency": 0,
-     "dailyGoal": 0,
-     "lastConnection": "2018-03-17/11:44:21",
-     "lastUnit": 0,
-     "lastLesson": 0,
-     "progress": null,
-     "remainingGoals": 0,
-     "exp": 0
- }
+{"content":
+[{"id":1,"nameCategory":"Examenes"},
+{"id":2,"nameCategory":"Practicas"},
+{"id":3,"nameCategory":"Apuntes"},{"id":4,"nameCategory":"Categoria10"},
+{"id":5,"nameCategory":"Categoria11"}]}
+
 Error response:
 Code: 401 UNAUTHORIZED
