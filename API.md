@@ -1,42 +1,508 @@
-﻿santatecla-tiempos-2 - API REST Documentation
+﻿
 --------
 
 About our API
 --------
 
-Our API REST is about categories, events, times and intervals in them. If you want to use it just
-follow these rules, either way you will probably recieve error messages.
+
 --------
 
+# santatecla-tiempos-2 - API REST Documentation
 
-API requests
----------
+## About our API
+Our API REST is about categories, events, times and intervals in them. If you want to use it just
+follow these rules, either way you will probably recieve error messages.
 
-The resource API has GET, POST, PUT and DELETE methods. http: // localhost: 8080 followed by the containt request URL.
+## API requests
 
-All API queries have been preceded by /api
+### Resources
+The resource API has GET, POST, PUT and DELETE methods.
+http: // localhost: 8080 followed by the containt request URL.
 
-All these are done with admin authentication
-----------
-----------
+**All API queries have been preceded by /api**
 
-Show categories
-----------
+## Show items
+Available for every role.
 
-Allows to show every category.
+#### Categories
+Shows all categories.
 
-URL:
-< /login >
+* ##### URL:
 
-Method:
-GET
+	< /categories/ >
 
-Success Response:
-{"content":
-[{"id":1,"nameCategory":"Examenes"},
-{"id":2,"nameCategory":"Practicas"},
-{"id":3,"nameCategory":"Apuntes"},{"id":4,"nameCategory":"Categoria10"},
-{"id":5,"nameCategory":"Categoria11"}]}
+* ##### Method:
 
-Error response:
-Code: 401 UNAUTHORIZED
+	`GET`
+	
+* ##### Success Response:
+  
+  	```
+	{
+		"content":[
+			{
+	    			"id": 1,
+	    			"nameCategory": "Examenes"
+        		},
+			{
+	    			"id": 2,
+	    			"nameCategory": "Prácticas"
+        		},
+			{
+	    			"id": 3,
+	    			"nameCategory": "Apuntes"
+        		},
+			{
+	    			"id": 4,
+	    			"nameCategory": "Categoria10"
+        		},
+			{
+	    			"id": 5,
+	    			"nameCategory": "Categoria11"
+        		},
+		]	    		
+	}
+	```
+  
+* ##### Error response:
+
+	**Code**: 401 UNAUTHORIZED
+	
+#### Events  
+Shows all events.
+
+* ##### URL:
+
+	< /events/ >
+
+* ##### Method:
+
+	`GET`
+
+* ##### Success Response:
+
+	```
+	{
+    "content": [
+        {
+            "id": 41,
+            "nameEvent": "DAW",
+            "date": "7-7-2019",
+            "location": "Aulario 1",
+            "wiki": "Aulario 1",
+            "hasImage": false,
+            "categories": [
+                {
+                    "id": 1,
+                    "nameCategory": "Examenes"
+                }
+            ],
+            "photo": null,
+            "encodedImage": null
+        },
+        {
+            "id": 42,
+            "nameEvent": "Seguridad",
+            "date": "20-12-18",
+            "location": "Aulario 1",
+            "wiki": "Aulario 1",
+            "hasImage": false,
+            "categories": [],
+            "photo": null,
+            "encodedImage": null
+        },
+        {
+            "id": 43,
+            "nameEvent": "Java",
+            "date": "1-1-19",
+            "location": "Aulario 2",
+            "wiki": "Aulario 2",
+            "hasImage": false,
+            "categories": [],
+            "photo": null,
+            "encodedImage": null
+        },
+        {
+            "id": 44,
+            "nameEvent": "DAW",
+            "date": "7-7-2019",
+            "location": "Aulario 1",
+            "wiki": "Aulario 1",
+            "hasImage": false,
+            "categories": [],
+            "photo": null,
+            "encodedImage": null
+        },
+        {
+            "id": 45,
+            "nameEvent": "Seguridad",
+            "date": "20-12-18",
+            "location": "Aulario 1",
+            "wiki": "Aulario 1",
+            "hasImage": false,
+            "categories": [],
+            "photo": null,
+            "encodedImage": null
+        }
+    ]
+}
+	```
+
+  * ##### Error Response:
+
+	**Code**: 401 UNAUTHORIZED OR 404 NOT FOUND
+
+#### Times
+Shows all times.
+
+* ##### URL:
+
+	< /times/ >
+
+* ##### Method:
+
+	`GET`
+
+* ##### Success Response:
+
+	```
+	{
+    "content": [
+        {
+            "id": 52,
+            "nameInterval": "Intervalo 1",
+            "startDate": "5-7-2018",
+            "endDate": "1-1-2020",
+            "events": [
+                {
+                    "id": 41,
+                    "nameEvent": "DAW",
+                    "date": "7-7-2019",
+                    "location": "Aulario 1",
+                    "wiki": "Aulario 1",
+                    "hasImage": false,
+                    "categories": [
+                        {
+                            "id": 1,
+                            "nameCategory": "Examenes"
+                        }
+                    ],
+                    "photo": null,
+                    "encodedImage": null
+                },
+                {
+                    "id": 42,
+                    "nameEvent": "Seguridad",
+                    "date": "20-12-18",
+                    "location": "Aulario 1",
+                    "wiki": "Aulario 1",
+                    "hasImage": false,
+                    "categories": [],
+                    "photo": null,
+                    "encodedImage": null
+                },
+                {
+                    "id": 43,
+                    "nameEvent": "Java",
+                    "date": "1-1-19",
+                    "location": "Aulario 2",
+                    "wiki": "Aulario 2",
+                    "hasImage": false,
+                    "categories": [],
+                    "photo": null,
+                    "encodedImage": null
+                }
+            ],
+            "subIntervals": [
+                {
+                    "nameSubTime": "2018",
+                    "startDate": "8-9-2018",
+                    "endDate": "10-10-2018",
+                    "subTimes": []
+                },
+                {
+                    "nameSubTime": "2019",
+                    "startDate": "10-1-2019",
+                    "endDate": "20-11-2019",
+                    "subTimes": []
+                }
+            ]
+        },
+        {
+            "id": 55,
+            "nameInterval": "Intervalo 2",
+            "startDate": "2-1-2020",
+            "endDate": "1-3-2020",
+            "events": [],
+            "subIntervals": []
+        },
+        {
+            "id": 56,
+            "nameInterval": "Intervalo 3",
+            "startDate": "2-4-2021",
+            "endDate": "2-5-2021",
+            "events": [],
+            "subIntervals": []
+        },
+        {
+            "id": 57,
+            "nameInterval": "Intervalo 4",
+            "startDate": "5-7-2018",
+            "endDate": "1-1-2020",
+            "events": [],
+            "subIntervals": []
+        },
+        {
+            "id": 58,
+            "nameInterval": "Intervalo 5",
+            "startDate": "2-1-2020",
+            "endDate": "1-3-2020",
+            "events": [],
+            "subIntervals": []
+        }
+    ]
+}
+	```
+
+  * ##### Error Response:
+
+	**Code**: 401 UNAUTHORIZED OR 404 NOT FOUND
+
+### Search Category by name
+Resource to show categories with a given name.
+
+* ##### URL
+
+	< /categories/{name} >
+
+* ##### Method:
+
+	`GET`
+	
+* ##### Example of query:
+
+	* URL
+		
+		`/api/categories/Examenes`
+  
+* ##### Success Response:
+
+  	```
+[
+    {
+        "id": 1,
+        "nameCategory": "Examenes"
+    }
+]	
+	```
+  
+* ##### Error Response:
+
+	**Code**: NADA
+
+### Search Event by name
+Resource to show events with a given name.
+
+* ##### URL
+
+	< /categories/{event} >
+
+* ##### Method:
+
+	`GET`
+	
+* ##### Example of query:
+
+	* URL
+		
+		`/api/events/DAW`
+  
+* ##### Success Response:
+
+  	```
+[
+    {
+        "id": 41,
+        "nameEvent": "DAW",
+        "date": "7-7-2019",
+        "location": "Aulario 1",
+        "wiki": "Aulario 1",
+        "hasImage": false,
+        "categories": [
+            {
+                "id": 1,
+                "nameCategory": "Examenes"
+            }
+        ],
+        "photo": null,
+        "encodedImage": null
+    },
+    {
+        "id": 44,
+        "nameEvent": "DAW",
+        "date": "7-7-2019",
+        "location": "Aulario 1",
+        "wiki": "Aulario 1",
+        "hasImage": false,
+        "categories": [],
+        "photo": null,
+        "encodedImage": null
+    }
+]	
+	```
+  
+* ##### Error Response:
+
+	**Code**: NADA
+
+### Search Times by ID
+Resource to show times with a given ID
+
+* ##### URL
+
+	< /times/{ID} >
+
+* ##### Method:
+
+	`GET`
+	
+* ##### Example of query:
+
+	* URL
+		
+		`/api/times/55`
+  
+* ##### Success Response:
+
+  	```
+{
+    "id": 55,
+    "nameInterval": "Intervalo 2",
+    "startDate": "2-1-2020",
+    "endDate": "1-3-2020",
+    "events": [],
+    "subIntervals": []
+}
+	```
+  
+* ##### Error Response:
+
+	**Code**: RESOURCE NOT FOUND
+
+
+#### Add a category
+Resource to add a category.
+
+* ##### URL
+
+	< /categories/ >
+
+* ##### Method:
+
+	`POST`
+
+* ##### Body:
+
+	{
+		"nameCategory": "nueva"
+	}
+
+* ##### Success Response:
+	
+	```
+{
+    "id": 67,
+    "nameCategory": "nueva"
+}
+	```
+	
+* ##### Error Response:
+
+	**Code**: 401 UNAUTHORIZED
+
+
+#### Add an event
+Resource to add an event
+
+* ##### URL
+
+	< /events/ >
+
+* ##### Method:
+
+	`POST`
+
+* ##### Body:
+
+	{
+            "nameEvent": "special",
+            "date": "20-12-18",
+            "location": "Aulario 1",
+            "wiki": "Aulario 1",
+            "hasImage": false,
+            "categories": [],
+            "photo": null,
+            "encodedImage": null
+	}
+
+* ##### Success Response:
+	
+	```
+{
+    "id": 69,
+    "nameEvent": "special",
+    "date": "20-12-18",
+    "location": "Aulario 1",
+    "wiki": "Aulario 1",
+    "hasImage": false,
+    "categories": [],
+    "photo": null,
+    "encodedImage": null
+}
+	```
+	
+* ##### Error Response:
+
+	**Code**: 401 UNAUTHORIZED
+
+
+#### Add a time
+Resource to add a time.
+
+* ##### URL
+
+	< /times/ >
+
+* ##### Method:
+
+	`POST`
+
+* ##### Body:
+
+	{
+            "nameInterval": "newTime",
+            "startDate": "2-1-2020",
+            "endDate": "1-3-2020",
+            "events": [],
+            "subIntervals": []
+        }
+
+* ##### Success Response:
+	
+	```
+{
+    "id": 72,
+    "nameInterval": "newTime",
+    "startDate": "2-1-2020",
+    "endDate": "1-3-2020",
+    "events": [],
+    "subIntervals": []
+}
+	```
+	
+* ##### Error Response:
+
+	**Code**: 401 UNAUTHORIZED
+
+
+
