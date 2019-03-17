@@ -660,27 +660,27 @@ Resource to delete a category with a given ID.
 	
 	```
 	{
-    		"content": [
-        	{
+		"content": [
+			{
             		"id": 2,
             		"nameCategory": "Practicas"
-        	},
-        	{
+			},
+			{
             		"id": 3,
             		"nameCategory": "Apuntes"
-        	},
-        	{
+			},
+			{
             		"id": 4,
             		"nameCategory": "Categoria10"
-        	},
-        	{
+			},
+			{
             		"id": 5,
             		"nameCategory": "Categoria11"
-        	},
-        	{
+			},
+			{
             		"id": 6,
             		"nameCategory": "Categoria12"
-        	}
+			}
     		]
 	}
 	```
