@@ -41,6 +41,7 @@ Resource to log in the application.
         "ROLE_ADMIN"
     ]
 }
+
 	```
 	
 * ##### Error Response:
