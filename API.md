@@ -336,19 +336,19 @@ Shows all times.
 			}
 			],
             		"subIntervals": [
-                	{
+                		{
                     		"nameSubTime": "2018",
                     		"startDate": "8-9-2018",
                    		"endDate": "10-10-2018",
                     		"subTimes": []
-                	},
-                	{
+                		},
+                		{
                     		"nameSubTime": "2019",
                     		"startDate": "10-1-2019",
                     		"endDate": "20-11-2019",
                     		"subTimes": []
-			}
-			]
+				}
+				]
 			},
 			{
             		"id": 55,
@@ -411,10 +411,10 @@ Resource to show categories with a given name.
 
   	```
 	[
-    		{
+    	{
 			"id": 1,
 			"nameCategory": "Examenes"
-    		}
+    	}
 	]		
 	```
   
