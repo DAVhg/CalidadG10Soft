@@ -289,14 +289,14 @@ Shows all times.
 
 	```
 	{
-    		"content": [
-        	{
+		"content": [
+			{
             		"id": 52,
             		"nameInterval": "Intervalo 1",
             		"startDate": "5-7-2018",
             		"endDate": "1-1-2020",
             		"events": [
-               	{
+			{
                     	"id": 41,
                     	"nameEvent": "DAW",
                     	"date": "7-7-2019",
@@ -304,15 +304,15 @@ Shows all times.
                     	"wiki": "Aulario 1",
                     	"hasImage": false,
                     	"categories": [
-                        {
+			{
                             "id": 1,
                             "nameCategory": "Examenes"
-                        }
-                    	],
+			}
+			],
                     	"photo": null,
                     	"encodedImage": null
-                },
-                {
+			},
+			{
                     	"id": 42,
                     	"nameEvent": "Seguridad",
                     	"date": "20-12-18",
@@ -322,8 +322,8 @@ Shows all times.
                     	"categories": [],
                     	"photo": null,
                     	"encodedImage": null
-                },
-                {
+			},
+			{
                     	"id": 43,
                     	"nameEvent": "Java",
                     	"date": "1-1-19",
@@ -333,8 +333,8 @@ Shows all times.
                     	"categories": [],
                     	"photo": null,
                     	"encodedImage": null
-                }
-            	],
+			}
+			],
             		"subIntervals": [
                 	{
                     		"nameSubTime": "2018",
@@ -347,42 +347,42 @@ Shows all times.
                     		"startDate": "10-1-2019",
                     		"endDate": "20-11-2019",
                     		"subTimes": []
-                	}
-            	]
-        	},
-        	{
+			}
+			]
+			},
+			{
             		"id": 55,
             		"nameInterval": "Intervalo 2",
             		"startDate": "2-1-2020",
             		"endDate": "1-3-2020",
             		"events": [],
             		"subIntervals": []
-        	},
-        	{
+			},
+			{
             		"id": 56,
             		"nameInterval": "Intervalo 3",
             		"startDate": "2-4-2021",
             		"endDate": "2-5-2021",
             		"events": [],
             		"subIntervals": []
-        	},
-        	{
+			},
+			{
            		"id": 57,
             		"nameInterval": "Intervalo 4",
             		"startDate": "5-7-2018",
             		"endDate": "1-1-2020",
             		"events": [],
             		"subIntervals": []
-        	},
-        	{
+			},
+			{
             		"id": 58,
             		"nameInterval": "Intervalo 5",
             		"startDate": "2-1-2020",
             		"endDate": "1-3-2020",
             		"events": [],
             		"subIntervals": []
-       		}
-    		]
+			}
+    			]
 	}
 	```
 
