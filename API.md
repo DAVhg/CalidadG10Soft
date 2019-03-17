@@ -32,16 +32,15 @@ Resource to log in the application.
 * ##### Success Response:
 	
 	```
-{
-    "id": 66,
-    "username": "admin",
-    "password": "$2a$10$GfiWtkcdbkyVnUonmXYMEOK9vDSQ9llPEKj1T6kbYc8QUKWw7VBAa",
-    "rol": [
-        "ROLE_USER",
-        "ROLE_ADMIN"
-    ]
-}
-
+	{
+    		"id": 66,
+    		"username": "admin",
+    		"password": "$2a$10$GfiWtkcdbkyVnUonmXYMEOK9vDSQ9llPEKj1T6kbYc8QUKWw7VBAa",
+    		"rol": [
+        		"ROLE_USER",
+        		"ROLE_ADMIN"
+    		]
+	}
 	```
 	
 * ##### Error Response:
