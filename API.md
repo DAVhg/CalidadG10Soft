@@ -1,13 +1,7 @@
 ﻿
---------
-
-About our API
---------
-
-
---------
 
 # santatecla-tiempos-2 - API REST Documentation
+--------
 
 ## About our API
 Our API REST is about categories, events, times and intervals in them. If you want to use it just
@@ -634,7 +628,7 @@ Resource to add a time.
 
 
 #### Deleting a category
-Resource to delete a category with a given name.
+Resource to delete a category with a given ID.
 
 * ##### URL
 
@@ -644,20 +638,232 @@ Resource to delete a category with a given name.
 
 	`DELETE`
 
-* ##### Body:
+* ##### Example of query:
 
-	{
-            "nameInterval": "newTime",
-            "startDate": "2-1-2020",
-            "endDate": "1-3-2020",
-            "events": [],
-            "subIntervals": []
-        }
+	* URL
+		
+		`/api/categories/1`
 
 * ##### Success Response:
 	
 	```
+{
+    "id": 1,
+    "nameCategory": "Examenes"
+}
+	```
 
+* ##### Result after delete:
+	
+	```
+{
+    "content": [
+        {
+            "id": 2,
+            "nameCategory": "Practicas"
+        },
+        {
+            "id": 3,
+            "nameCategory": "Apuntes"
+        },
+        {
+            "id": 4,
+            "nameCategory": "Categoria10"
+        },
+        {
+            "id": 5,
+            "nameCategory": "Categoria11"
+        },
+        {
+            "id": 6,
+            "nameCategory": "Categoria12"
+        }
+    ]
+}
+	```
+	
+* ##### Error Response:
+
+	**Code**: 401 UNAUTHORIZED
+
+#### Deleting an event
+Resource to delete an event with a given ID.
+
+* ##### URL
+
+	< /events/ >
+
+* ##### Method:
+
+	`DELETE`
+
+* ##### Example of query:
+
+	* URL
+		
+		`/api/events/41`
+
+* ##### Success Response:
+	
+	```
+{
+    "id": 41,
+    "nameEvent": "DAW",
+    "date": "7-7-2019",
+    "location": "Aulario 1",
+    "wiki": "Aulario 1",
+    "hasImage": false,
+    "categories": [],
+    "photo": null,
+    "encodedImage": null
+}
+	```
+
+* ##### Result after delete:
+	
+	```
+{
+    "content": [
+        {
+            "id": 42,
+            "nameEvent": "Seguridad",
+            "date": "20-12-18",
+            "location": "Aulario 1",
+            "wiki": "Aulario 1",
+            "hasImage": false,
+            "categories": [],
+            "photo": null,
+            "encodedImage": null
+        },
+        {
+            "id": 43,
+            "nameEvent": "Java",
+            "date": "1-1-19",
+            "location": "Aulario 2",
+            "wiki": "Aulario 2",
+            "hasImage": false,
+            "categories": [],
+            "photo": null,
+            "encodedImage": null
+        },
+        {
+            "id": 44,
+            "nameEvent": "DAW",
+            "date": "7-7-2019",
+            "location": "Aulario 1",
+            "wiki": "Aulario 1",
+            "hasImage": false,
+            "categories": [],
+            "photo": null,
+            "encodedImage": null
+        },
+        {
+            "id": 45,
+            "nameEvent": "Seguridad",
+            "date": "20-12-18",
+            "location": "Aulario 1",
+            "wiki": "Aulario 1",
+            "hasImage": false,
+            "categories": [],
+            "photo": null,
+            "encodedImage": null
+        },
+        {
+            "id": 46,
+            "nameEvent": "Java",
+            "date": "1-1-19",
+            "location": "Aulario 2",
+            "wiki": "Aulario 2",
+            "hasImage": false,
+            "categories": [],
+            "photo": null,
+            "encodedImage": null
+        }
+    ]
+}
+	```
+	
+* ##### Error Response:
+
+	**Code**: 401 UNAUTHORIZED
+
+#### Deleting a time
+Resource to delete a time with a given ID.
+
+* ##### URL
+
+	< /times/ >
+
+* ##### Method:
+
+	`DELETE`
+
+* ##### Example of query:
+
+	* URL
+		
+		`/api/times/56`
+
+* ##### Success Response:
+	
+	```
+{
+    "id": 56,
+    "nameInterval": "Intervalo 3",
+    "startDate": "2-4-2021",
+    "endDate": "2-5-2021",
+    "events": [],
+    "subIntervals": []
+}
+	```
+
+* ##### Result after delete:
+	
+	```
+{
+    "content": [
+        {
+            "id": 55,
+            "nameInterval": "Intervalo 2",
+            "startDate": "2-1-2020",
+            "endDate": "1-3-2020",
+            "events": [],
+            "subIntervals": []
+        },
+        {
+            "id": 57,
+            "nameInterval": "Intervalo 4",
+            "startDate": "5-7-2018",
+            "endDate": "1-1-2020",
+            "events": [],
+            "subIntervals": []
+        },
+        {
+            "id": 58,
+            "nameInterval": "Intervalo 5",
+            "startDate": "2-1-2020",
+            "endDate": "1-3-2020",
+            "events": [],
+            "subIntervals": []
+        },
+        {
+            "id": 59,
+            "nameInterval": "Intervalo 6",
+            "startDate": "2-4-2021",
+            "endDate": "2-5-2021",
+            "events": [],
+            "subIntervals": []
+        },
+        {
+            "id": 60,
+            "nameInterval": "Intervalo 7",
+            "startDate": "2-4-2021",
+            "endDate": "2-5-2021",
+            "events": [],
+            "subIntervals": []
+        }
+    ]
+}
 	```
 	
 * ##### Error Response:
