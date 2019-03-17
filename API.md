@@ -21,6 +21,134 @@ http: // localhost: 8080 followed by the containt request URL.
 
 **All API queries have been preceded by /api**
 
+#### LOGIN
+Resource to log in the application.
+
+* ##### URL
+
+	< /login/ >
+
+* ##### Method:
+
+	`GET`
+
+* ##### Login Role Used: Admin
+	
+
+* ##### Success Response:
+	
+	```
+{
+    "id": 66,
+    "username": "admin",
+    "password": "$2a$10$GfiWtkcdbkyVnUonmXYMEOK9vDSQ9llPEKj1T6kbYc8QUKWw7VBAa",
+    "rol": [
+        "ROLE_USER",
+        "ROLE_ADMIN"
+    ]
+}
+	```
+	
+* ##### Error Response:
+
+	**Code**: 401 UNAUTHORIZED
+
+
+* ##### Login Role Used: User
+	
+
+* ##### Success Response:
+	
+	```
+{
+    "id": 65,
+    "username": "Marcos",
+    "password": "$2a$10$icXSuiXsow7atuSbRfTH..BhU4cQnAdC2QFXsM/VBpOre5sJuowM6",
+    "rol": [
+        "ROLE_USER"
+    ]
+}
+	```
+	
+* ##### Error Response:
+
+	**Code**: 401 UNAUTHORIZED
+
+#### LOGOUT
+Resource to log out the application.
+
+* ##### URL
+
+	< /logout/ >
+
+* ##### Method:
+
+	`GET`
+
+* ##### Login Role Used: Admin
+	
+
+* ##### Success Response:
+	
+	```
+true
+	```
+	
+* ##### Error Response:
+
+	**Code**: 401 UNAUTHORIZED
+
+#### Pagination
+Resource search a specific page in the application.
+For example searching first page after the default one in categories.
+
+* ##### URL
+
+	< /categories/ >
+
+* ##### Method:
+
+	`GET`
+
+* ##### Example of query:
+
+	* URL
+		
+		`/api/categories/?page=1`
+
+* ##### Success Response:
+	
+	```
+{
+    "content": [
+        {
+            "id": 6,
+            "nameCategory": "Categoria12"
+        },
+        {
+            "id": 7,
+            "nameCategory": "Categoria13"
+        },
+        {
+            "id": 8,
+            "nameCategory": "Categoria14"
+        },
+        {
+            "id": 9,
+            "nameCategory": "Categoria15"
+        },
+        {
+            "id": 10,
+            "nameCategory": "Categoria16"
+        }
+    ]
+}
+	```
+	
+* ##### Error Response:
+
+	**Code**: No errors available
+
 ## Show items
 Available for every role.
 
@@ -505,4 +633,33 @@ Resource to add a time.
 	**Code**: 401 UNAUTHORIZED
 
 
+#### Deleting a category
+Resource to delete a category with a given name.
 
+* ##### URL
+
+	< /categories/ >
+
+* ##### Method:
+
+	`DELETE`
+
+* ##### Body:
+
+	{
+            "nameInterval": "newTime",
+            "startDate": "2-1-2020",
+            "endDate": "1-3-2020",
+            "events": [],
+            "subIntervals": []
+        }
+
+* ##### Success Response:
+	
+	```
+
+	```
+	
+* ##### Error Response:
+
+	**Code**: 401 UNAUTHORIZED
