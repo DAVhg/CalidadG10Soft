@@ -444,31 +444,31 @@ Resource to show events with a given name.
   	```
 	[
     		{
-        		"id": 41,
-        		"nameEvent": "DAW",
-        		"date": "7-7-2019",
-        		"location": "Aulario 1",
-        		"wiki": "Aulario 1",
-        		"hasImage": false,
-        		"categories": [
-            		{
-                		"id": 1,
-                		"nameCategory": "Examenes"
-            		}
-        		],
-        		"photo": null,
-        		"encodedImage": null
+        			"id": 41,
+        			"nameEvent": "DAW",
+        			"date": "7-7-2019",
+        			"location": "Aulario 1",
+        			"wiki": "Aulario 1",
+        			"hasImage": false,
+        			"categories": [
+            			{
+                			"id": 1,
+                			"nameCategory": "Examenes"
+            			}
+        			],
+        			"photo": null,
+        			"encodedImage": null
     		},
     		{
-        		"id": 44,
-        		"nameEvent": "DAW",
-        		"date": "7-7-2019",
-        		"location": "Aulario 1",
-        		"wiki": "Aulario 1",
-        		"hasImage": false,
-        		"categories": [],
-        		"photo": null,
-        		"encodedImage": null
+        			"id": 44,
+        			"nameEvent": "DAW",
+        			"date": "7-7-2019",
+        			"location": "Aulario 1",
+        			"wiki": "Aulario 1",
+        			"hasImage": false,
+        			"categories": [],
+        			"photo": null,
+        			"encodedImage": null
     		}
 	]	
 	```
