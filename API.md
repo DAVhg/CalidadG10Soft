@@ -115,27 +115,27 @@ For example searching first page after the default one in categories.
 	```
 	{
     		"content": [
-        	{
-            		"id": 6,
-            		"nameCategory": "Categoria12"
-        	},
-        	{
-            		"id": 7,
-            		"nameCategory": "Categoria13"
-        	},
-        	{
-            		"id": 8,
-            		"nameCategory": "Categoria14"
-        	},
-        	{
-           		"id": 9,
-           		"nameCategory": "Categoria15"
-        	},
-        	{
-            		"id": 10,
-            		"nameCategory": "Categoria16"
-        	}
-    		]
+			{
+            			"id": 6,
+            			"nameCategory": "Categoria12"
+			},
+			{
+            			"id": 7,
+            			"nameCategory": "Categoria13"
+			},
+			{
+            			"id": 8,
+            			"nameCategory": "Categoria14"
+			},
+			{
+           			"id": 9,
+           			"nameCategory": "Categoria15"
+			},
+			{
+            			"id": 10,
+            			"nameCategory": "Categoria16"
+			}
+		]
 	}
 	```
 	
