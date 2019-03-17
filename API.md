@@ -604,12 +604,12 @@ Resource to add a time.
 * ##### Body:
 	```
 	{
-            "nameInterval": "newTime",
-            "startDate": "2-1-2020",
-            "endDate": "1-3-2020",
-            "events": [],
-            "subIntervals": []
-        }
+		"nameInterval": "newTime",
+		"startDate": "2-1-2020",
+		"endDate": "1-3-2020",
+		"events": [],
+		"subIntervals": []
+	}
 	```
 
 * ##### Success Response:
