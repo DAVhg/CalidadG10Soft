@@ -769,7 +769,7 @@ Resource to delete an event with a given ID.
             			"hasImage": false,
             			"categories": [],
             			"photo": null,
-            			"encodedImage": null
+            				"encodedImage": null
 			},
 			{
             			"id": 46,
@@ -782,7 +782,7 @@ Resource to delete an event with a given ID.
             			"photo": null,
             			"encodedImage": null
         		}
-    			]
+    	]
 	}
 	```
 	
@@ -865,7 +865,7 @@ Resource to delete a time with a given ID.
             			"events": [],
             			"subIntervals": []
 			}
-			]
+		]
 	}
 	```
 	
