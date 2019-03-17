@@ -54,14 +54,14 @@ Resource to log in the application.
 * ##### Success Response:
 	
 	```
-{
-    "id": 65,
-    "username": "Marcos",
-    "password": "$2a$10$icXSuiXsow7atuSbRfTH..BhU4cQnAdC2QFXsM/VBpOre5sJuowM6",
-    "rol": [
-        "ROLE_USER"
-    ]
-}
+	{
+   	 	"id": 65,
+    	 	"username": "Marcos",
+   	 	"password": "$2a$10$icXSuiXsow7atuSbRfTH..BhU4cQnAdC2QFXsM/VBpOre5sJuowM6",
+    	 	"rol": [
+     	   		"ROLE_USER"
+   	 	]
+	}
 	```
 	
 * ##### Error Response:
@@ -85,7 +85,7 @@ Resource to log out the application.
 * ##### Success Response:
 	
 	```
-true
+	true
 	```
 	
 * ##### Error Response:
@@ -113,30 +113,30 @@ For example searching first page after the default one in categories.
 * ##### Success Response:
 	
 	```
-{
-    "content": [
-        {
-            "id": 6,
-            "nameCategory": "Categoria12"
-        },
-        {
-            "id": 7,
-            "nameCategory": "Categoria13"
-        },
-        {
-            "id": 8,
-            "nameCategory": "Categoria14"
-        },
-        {
-            "id": 9,
-            "nameCategory": "Categoria15"
-        },
-        {
-            "id": 10,
-            "nameCategory": "Categoria16"
-        }
-    ]
-}
+	{
+    		"content": [
+        	{
+            		"id": 6,
+            		"nameCategory": "Categoria12"
+        	},
+        	{
+            		"id": 7,
+            		"nameCategory": "Categoria13"
+        	},
+        	{
+            		"id": 8,
+            		"nameCategory": "Categoria14"
+        	},
+        	{
+           		"id": 9,
+           		"nameCategory": "Categoria15"
+        	},
+        	{
+            		"id": 10,
+            		"nameCategory": "Categoria16"
+        	}
+    		]
+	}
 	```
 	
 * ##### Error Response:
@@ -205,69 +205,69 @@ Shows all events.
 
 	```
 	{
-    "content": [
-        {
-            "id": 41,
-            "nameEvent": "DAW",
-            "date": "7-7-2019",
-            "location": "Aulario 1",
-            "wiki": "Aulario 1",
-            "hasImage": false,
-            "categories": [
-                {
-                    "id": 1,
-                    "nameCategory": "Examenes"
-                }
-            ],
-            "photo": null,
-            "encodedImage": null
-        },
-        {
-            "id": 42,
-            "nameEvent": "Seguridad",
-            "date": "20-12-18",
-            "location": "Aulario 1",
-            "wiki": "Aulario 1",
-            "hasImage": false,
-            "categories": [],
-            "photo": null,
-            "encodedImage": null
-        },
-        {
-            "id": 43,
-            "nameEvent": "Java",
-            "date": "1-1-19",
-            "location": "Aulario 2",
-            "wiki": "Aulario 2",
-            "hasImage": false,
-            "categories": [],
-            "photo": null,
-            "encodedImage": null
-        },
-        {
-            "id": 44,
-            "nameEvent": "DAW",
-            "date": "7-7-2019",
-            "location": "Aulario 1",
-            "wiki": "Aulario 1",
-            "hasImage": false,
-            "categories": [],
-            "photo": null,
-            "encodedImage": null
-        },
-        {
-            "id": 45,
-            "nameEvent": "Seguridad",
-            "date": "20-12-18",
-            "location": "Aulario 1",
-            "wiki": "Aulario 1",
-            "hasImage": false,
-            "categories": [],
-            "photo": null,
-            "encodedImage": null
-        }
-    ]
-}
+    		"content": [
+        	{
+            		"id": 41,
+            		"nameEvent": "DAW",
+            		"date": "7-7-2019",
+            		"location": "Aulario 1",
+            		"wiki": "Aulario 1",
+            		"hasImage": false,
+            		"categories": [
+                		{
+                    			"id": 1,
+                    			"nameCategory": "Examenes"
+                		}
+            		],
+            		"photo": null,
+            		"encodedImage": null
+        	},
+        	{
+            		"id": 42,
+            		"nameEvent": "Seguridad",
+            		"date": "20-12-18",
+            		"location": "Aulario 1",
+            		"wiki": "Aulario 1",
+            		"hasImage": false,
+            		"categories": [],
+            		"photo": null,
+            		"encodedImage": null
+        	},
+        	{
+            		"id": 43,
+            		"nameEvent": "Java",
+            		"date": "1-1-19",
+            		"location": "Aulario 2",
+            		"wiki": "Aulario 2",
+            		"hasImage": false,
+            		"categories": [],
+            		"photo": null,
+            		"encodedImage": null
+        	},
+        	{
+            		"id": 44,
+            		"nameEvent": "DAW",
+            		"date": "7-7-2019",
+            		"location": "Aulario 1",
+            		"wiki": "Aulario 1",
+            		"hasImage": false,
+            		"categories": [],
+            		"photo": null,
+            		"encodedImage": null
+        	},
+        	{
+            		"id": 45,
+            		"nameEvent": "Seguridad",
+            		"date": "20-12-18",
+            		"location": "Aulario 1",
+            		"wiki": "Aulario 1",
+            		"hasImage": false,
+            		"categories": [],
+            		"photo": null,
+            		"encodedImage": null
+        	}
+    		]
+	}
 	```
 
   * ##### Error Response:
@@ -289,101 +289,101 @@ Shows all times.
 
 	```
 	{
-    "content": [
-        {
-            "id": 52,
-            "nameInterval": "Intervalo 1",
-            "startDate": "5-7-2018",
-            "endDate": "1-1-2020",
-            "events": [
-                {
-                    "id": 41,
-                    "nameEvent": "DAW",
-                    "date": "7-7-2019",
-                    "location": "Aulario 1",
-                    "wiki": "Aulario 1",
-                    "hasImage": false,
-                    "categories": [
+    		"content": [
+        	{
+            		"id": 52,
+            		"nameInterval": "Intervalo 1",
+            		"startDate": "5-7-2018",
+            		"endDate": "1-1-2020",
+            		"events": [
+               	{
+                    	"id": 41,
+                    	"nameEvent": "DAW",
+                    	"date": "7-7-2019",
+                    	"location": "Aulario 1",
+                    	"wiki": "Aulario 1",
+                    	"hasImage": false,
+                    	"categories": [
                         {
                             "id": 1,
                             "nameCategory": "Examenes"
                         }
-                    ],
-                    "photo": null,
-                    "encodedImage": null
+                    	],
+                    	"photo": null,
+                    	"encodedImage": null
                 },
                 {
-                    "id": 42,
-                    "nameEvent": "Seguridad",
-                    "date": "20-12-18",
-                    "location": "Aulario 1",
-                    "wiki": "Aulario 1",
-                    "hasImage": false,
-                    "categories": [],
-                    "photo": null,
-                    "encodedImage": null
+                    	"id": 42,
+                    	"nameEvent": "Seguridad",
+                    	"date": "20-12-18",
+                    	"location": "Aulario 1",
+                    	"wiki": "Aulario 1",
+                    	"hasImage": false,
+                    	"categories": [],
+                    	"photo": null,
+                    	"encodedImage": null
                 },
                 {
-                    "id": 43,
-                    "nameEvent": "Java",
-                    "date": "1-1-19",
-                    "location": "Aulario 2",
-                    "wiki": "Aulario 2",
-                    "hasImage": false,
-                    "categories": [],
-                    "photo": null,
-                    "encodedImage": null
+                    	"id": 43,
+                    	"nameEvent": "Java",
+                    	"date": "1-1-19",
+                    	"location": "Aulario 2",
+                    	"wiki": "Aulario 2",
+                    	"hasImage": false,
+                    	"categories": [],
+                    	"photo": null,
+                    	"encodedImage": null
                 }
-            ],
-            "subIntervals": [
-                {
-                    "nameSubTime": "2018",
-                    "startDate": "8-9-2018",
-                    "endDate": "10-10-2018",
-                    "subTimes": []
-                },
-                {
-                    "nameSubTime": "2019",
-                    "startDate": "10-1-2019",
-                    "endDate": "20-11-2019",
-                    "subTimes": []
-                }
-            ]
-        },
-        {
-            "id": 55,
-            "nameInterval": "Intervalo 2",
-            "startDate": "2-1-2020",
-            "endDate": "1-3-2020",
-            "events": [],
-            "subIntervals": []
-        },
-        {
-            "id": 56,
-            "nameInterval": "Intervalo 3",
-            "startDate": "2-4-2021",
-            "endDate": "2-5-2021",
-            "events": [],
-            "subIntervals": []
-        },
-        {
-            "id": 57,
-            "nameInterval": "Intervalo 4",
-            "startDate": "5-7-2018",
-            "endDate": "1-1-2020",
-            "events": [],
-            "subIntervals": []
-        },
-        {
-            "id": 58,
-            "nameInterval": "Intervalo 5",
-            "startDate": "2-1-2020",
-            "endDate": "1-3-2020",
-            "events": [],
-            "subIntervals": []
-        }
-    ]
-}
+            	],
+            		"subIntervals": [
+                	{
+                    		"nameSubTime": "2018",
+                    		"startDate": "8-9-2018",
+                   		"endDate": "10-10-2018",
+                    		"subTimes": []
+                	},
+                	{
+                    		"nameSubTime": "2019",
+                    		"startDate": "10-1-2019",
+                    		"endDate": "20-11-2019",
+                    		"subTimes": []
+                	}
+            	]
+        	},
+        	{
+            		"id": 55,
+            		"nameInterval": "Intervalo 2",
+            		"startDate": "2-1-2020",
+            		"endDate": "1-3-2020",
+            		"events": [],
+            		"subIntervals": []
+        	},
+        	{
+            		"id": 56,
+            		"nameInterval": "Intervalo 3",
+            		"startDate": "2-4-2021",
+            		"endDate": "2-5-2021",
+            		"events": [],
+            		"subIntervals": []
+        	},
+        	{
+           		"id": 57,
+            		"nameInterval": "Intervalo 4",
+            		"startDate": "5-7-2018",
+            		"endDate": "1-1-2020",
+            		"events": [],
+            		"subIntervals": []
+        	},
+        	{
+            		"id": 58,
+            		"nameInterval": "Intervalo 5",
+            		"startDate": "2-1-2020",
+            		"endDate": "1-3-2020",
+            		"events": [],
+            		"subIntervals": []
+       		}
+    		]
+	}
 	```
 
   * ##### Error Response:
@@ -410,12 +410,12 @@ Resource to show categories with a given name.
 * ##### Success Response:
 
   	```
-[
-    {
-        "id": 1,
-        "nameCategory": "Examenes"
-    }
-]	
+	[
+    		{
+       			 "id": 1,
+        		"nameCategory": "Examenes"
+    		}
+	]		
 	```
   
 * ##### Error Response:
@@ -442,35 +442,35 @@ Resource to show events with a given name.
 * ##### Success Response:
 
   	```
-[
-    {
-        "id": 41,
-        "nameEvent": "DAW",
-        "date": "7-7-2019",
-        "location": "Aulario 1",
-        "wiki": "Aulario 1",
-        "hasImage": false,
-        "categories": [
-            {
-                "id": 1,
-                "nameCategory": "Examenes"
-            }
-        ],
-        "photo": null,
-        "encodedImage": null
-    },
-    {
-        "id": 44,
-        "nameEvent": "DAW",
-        "date": "7-7-2019",
-        "location": "Aulario 1",
-        "wiki": "Aulario 1",
-        "hasImage": false,
-        "categories": [],
-        "photo": null,
-        "encodedImage": null
-    }
-]	
+	[
+    		{
+        		"id": 41,
+        		"nameEvent": "DAW",
+        		"date": "7-7-2019",
+        		"location": "Aulario 1",
+        		"wiki": "Aulario 1",
+        		"hasImage": false,
+        		"categories": [
+            		{
+                		"id": 1,
+                		"nameCategory": "Examenes"
+            		}
+        		],
+        		"photo": null,
+        		"encodedImage": null
+    		},
+    		{
+        		"id": 44,
+        		"nameEvent": "DAW",
+        		"date": "7-7-2019",
+        		"location": "Aulario 1",
+        		"wiki": "Aulario 1",
+        		"hasImage": false,
+        		"categories": [],
+        		"photo": null,
+        		"encodedImage": null
+    		}
+	]	
 	```
   
 * ##### Error Response:
@@ -497,14 +497,14 @@ Resource to show times with a given ID
 * ##### Success Response:
 
   	```
-{
-    "id": 55,
-    "nameInterval": "Intervalo 2",
-    "startDate": "2-1-2020",
-    "endDate": "1-3-2020",
-    "events": [],
-    "subIntervals": []
-}
+	{
+    		"id": 55,
+    		"nameInterval": "Intervalo 2",
+    		"startDate": "2-1-2020",
+    		"endDate": "1-3-2020",
+    		"events": [],
+    		"subIntervals": []
+	}
 	```
   
 * ##### Error Response:
@@ -524,18 +524,19 @@ Resource to add a category.
 	`POST`
 
 * ##### Body:
-
+	```
 	{
 		"nameCategory": "nueva"
 	}
+	```
 
 * ##### Success Response:
 	
 	```
-{
-    "id": 67,
-    "nameCategory": "nueva"
-}
+	{
+    		"id": 67,
+    		"nameCategory": "nueva"
+	}
 	```
 	
 * ##### Error Response:
@@ -555,7 +556,7 @@ Resource to add an event
 	`POST`
 
 * ##### Body:
-
+	```
 	{
             "nameEvent": "special",
             "date": "20-12-18",
@@ -566,21 +567,22 @@ Resource to add an event
             "photo": null,
             "encodedImage": null
 	}
+	```
 
 * ##### Success Response:
 	
 	```
-{
-    "id": 69,
-    "nameEvent": "special",
-    "date": "20-12-18",
-    "location": "Aulario 1",
-    "wiki": "Aulario 1",
-    "hasImage": false,
-    "categories": [],
-    "photo": null,
-    "encodedImage": null
-}
+	{
+    		"id": 69,
+    		"nameEvent": "special",
+    		"date": "20-12-18",
+    		"location": "Aulario 1",
+    		"wiki": "Aulario 1",
+    		"hasImage": false,
+    		"categories": [],
+    		"photo": null,
+    		"encodedImage": null
+	}
 	```
 	
 * ##### Error Response:
@@ -600,7 +602,7 @@ Resource to add a time.
 	`POST`
 
 * ##### Body:
-
+	```
 	{
             "nameInterval": "newTime",
             "startDate": "2-1-2020",
@@ -608,18 +610,19 @@ Resource to add a time.
             "events": [],
             "subIntervals": []
         }
+	```
 
 * ##### Success Response:
 	
 	```
-{
-    "id": 72,
-    "nameInterval": "newTime",
-    "startDate": "2-1-2020",
-    "endDate": "1-3-2020",
-    "events": [],
-    "subIntervals": []
-}
+	{
+    		"id": 72,
+    		"nameInterval": "newTime",
+    		"startDate": "2-1-2020",
+    		"endDate": "1-3-2020",
+    		"events": [],
+    		"subIntervals": []
+	}
 	```
 	
 * ##### Error Response:
@@ -647,39 +650,39 @@ Resource to delete a category with a given ID.
 * ##### Success Response:
 	
 	```
-{
-    "id": 1,
-    "nameCategory": "Examenes"
-}
+	{
+   		"id": 1,
+    		"nameCategory": "Examenes"
+	}
 	```
 
 * ##### Result after delete:
 	
 	```
-{
-    "content": [
-        {
-            "id": 2,
-            "nameCategory": "Practicas"
-        },
-        {
-            "id": 3,
-            "nameCategory": "Apuntes"
-        },
-        {
-            "id": 4,
-            "nameCategory": "Categoria10"
-        },
-        {
-            "id": 5,
-            "nameCategory": "Categoria11"
-        },
-        {
-            "id": 6,
-            "nameCategory": "Categoria12"
-        }
-    ]
-}
+	{
+    		"content": [
+        	{
+            		"id": 2,
+            		"nameCategory": "Practicas"
+        	},
+        	{
+            		"id": 3,
+            		"nameCategory": "Apuntes"
+        	},
+        	{
+            		"id": 4,
+            		"nameCategory": "Categoria10"
+        	},
+        	{
+            		"id": 5,
+            		"nameCategory": "Categoria11"
+        	},
+        	{
+            		"id": 6,
+            		"nameCategory": "Categoria12"
+        	}
+    		]
+	}
 	```
 	
 * ##### Error Response:
@@ -706,81 +709,81 @@ Resource to delete an event with a given ID.
 * ##### Success Response:
 	
 	```
-{
-    "id": 41,
-    "nameEvent": "DAW",
-    "date": "7-7-2019",
-    "location": "Aulario 1",
-    "wiki": "Aulario 1",
-    "hasImage": false,
-    "categories": [],
-    "photo": null,
-    "encodedImage": null
-}
+	{
+    		"id": 41,
+    		"nameEvent": "DAW",
+    		"date": "7-7-2019",
+    		"location": "Aulario 1",
+   		"wiki": "Aulario 1",
+    		"hasImage": false,
+    		"categories": [],
+    		"photo": null,
+    		"encodedImage": null
+	}
 	```
 
 * ##### Result after delete:
 	
 	```
-{
-    "content": [
-        {
-            "id": 42,
-            "nameEvent": "Seguridad",
-            "date": "20-12-18",
-            "location": "Aulario 1",
-            "wiki": "Aulario 1",
-            "hasImage": false,
-            "categories": [],
-            "photo": null,
-            "encodedImage": null
-        },
-        {
-            "id": 43,
-            "nameEvent": "Java",
-            "date": "1-1-19",
-            "location": "Aulario 2",
-            "wiki": "Aulario 2",
-            "hasImage": false,
-            "categories": [],
-            "photo": null,
-            "encodedImage": null
-        },
-        {
-            "id": 44,
-            "nameEvent": "DAW",
-            "date": "7-7-2019",
-            "location": "Aulario 1",
-            "wiki": "Aulario 1",
-            "hasImage": false,
-            "categories": [],
-            "photo": null,
-            "encodedImage": null
-        },
-        {
-            "id": 45,
-            "nameEvent": "Seguridad",
-            "date": "20-12-18",
-            "location": "Aulario 1",
-            "wiki": "Aulario 1",
-            "hasImage": false,
-            "categories": [],
-            "photo": null,
-            "encodedImage": null
-        },
-        {
-            "id": 46,
-            "nameEvent": "Java",
-            "date": "1-1-19",
-            "location": "Aulario 2",
-            "wiki": "Aulario 2",
-            "hasImage": false,
-            "categories": [],
-            "photo": null,
-            "encodedImage": null
-        }
-    ]
-}
+	{
+    		"content": [
+        	{
+            		"id": 42,
+           		"nameEvent": "Seguridad",
+            		"date": "20-12-18",
+            		"location": "Aulario 1",
+            		"wiki": "Aulario 1",
+            		"hasImage": false,
+            		"categories": [],
+            		"photo": null,
+            		"encodedImage": null
+        	},
+        	{
+            		"id": 43,
+            		"nameEvent": "Java",
+            		"date": "1-1-19",
+            		"location": "Aulario 2",
+            		"wiki": "Aulario 2",
+            		"hasImage": false,
+            		"categories": [],
+            		"photo": null,
+            		"encodedImage": null
+        	},
+       		{
+            		"id": 44,
+            		"nameEvent": "DAW",
+            		"date": "7-7-2019",
+            		"location": "Aulario 1",
+            		"wiki": "Aulario 1",
+            		"hasImage": false,
+            		"categories": [],
+            		"photo": null,
+            		"encodedImage": null
+        	},
+        	{
+            		"id": 45,
+            		"nameEvent": "Seguridad",
+            		"date": "20-12-18",
+            		"location": "Aulario 1",
+            		"wiki": "Aulario 1",
+            		"hasImage": false,
+            		"categories": [],
+            		"photo": null,
+            		"encodedImage": null
+        	},
+        	{
+            		"id": 46,
+            		"nameEvent": "Java",
+            		"date": "1-1-19",
+            		"location": "Aulario 2",
+            		"wiki": "Aulario 2",
+            		"hasImage": false,
+            		"categories": [],
+            		"photo": null,
+            		"encodedImage": null
+        	}
+    		]
+	}
 	```
 	
 * ##### Error Response:
@@ -807,63 +810,63 @@ Resource to delete a time with a given ID.
 * ##### Success Response:
 	
 	```
-{
-    "id": 56,
-    "nameInterval": "Intervalo 3",
-    "startDate": "2-4-2021",
-    "endDate": "2-5-2021",
-    "events": [],
-    "subIntervals": []
-}
+	{
+    		"id": 56,
+    		"nameInterval": "Intervalo 3",
+    		"startDate": "2-4-2021",
+    		"endDate": "2-5-2021",
+    		"events": [],
+    		"subIntervals": []
+	}
 	```
 
 * ##### Result after delete:
 	
 	```
-{
-    "content": [
-        {
-            "id": 55,
-            "nameInterval": "Intervalo 2",
-            "startDate": "2-1-2020",
-            "endDate": "1-3-2020",
-            "events": [],
-            "subIntervals": []
-        },
-        {
-            "id": 57,
-            "nameInterval": "Intervalo 4",
-            "startDate": "5-7-2018",
-            "endDate": "1-1-2020",
-            "events": [],
-            "subIntervals": []
-        },
-        {
-            "id": 58,
-            "nameInterval": "Intervalo 5",
-            "startDate": "2-1-2020",
-            "endDate": "1-3-2020",
-            "events": [],
-            "subIntervals": []
-        },
-        {
-            "id": 59,
-            "nameInterval": "Intervalo 6",
-            "startDate": "2-4-2021",
-            "endDate": "2-5-2021",
-            "events": [],
-            "subIntervals": []
-        },
-        {
-            "id": 60,
-            "nameInterval": "Intervalo 7",
-            "startDate": "2-4-2021",
-            "endDate": "2-5-2021",
-            "events": [],
-            "subIntervals": []
-        }
-    ]
-}
+	{
+    		"content": [
+        	{
+            		"id": 55,
+            		"nameInterval": "Intervalo 2",
+            		"startDate": "2-1-2020",
+            		"endDate": "1-3-2020",
+            		"events": [],
+            		"subIntervals": []
+        	},
+        	{
+            		"id": 57,
+            		"nameInterval": "Intervalo 4",
+            		"startDate": "5-7-2018",
+            		"endDate": "1-1-2020",
+            		"events": [],
+            		"subIntervals": []
+        	},
+        	{
+            		"id": 58,
+            		"nameInterval": "Intervalo 5",
+            		"startDate": "2-1-2020",
+            		"endDate": "1-3-2020",
+            		"events": [],
+            		"subIntervals": []
+        	},
+        	{
+            		"id": 59,
+            		"nameInterval": "Intervalo 6",
+            		"startDate": "2-4-2021",
+           		 "endDate": "2-5-2021",
+           		"events": [],
+            		"subIntervals": []
+        	},
+        	{
+            		"id": 60,
+            		"nameInterval": "Intervalo 7",
+            		"startDate": "2-4-2021",
+            		"endDate": "2-5-2021",
+            		"events": [],
+            		"subIntervals": []
+        	}
+    		]
+	}
 	```
 	
 * ##### Error Response:
