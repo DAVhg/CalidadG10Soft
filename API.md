@@ -206,7 +206,7 @@ Shows all events.
 	```
 	{
     		"content": [
-			{
+				{
             			"id": 41,
             			"nameEvent": "DAW",
             			"date": "7-7-2019",
@@ -218,11 +218,11 @@ Shows all events.
                     				"id": 1,
                     				"nameCategory": "Examenes"
 					}
-				],
+					],
             			"photo": null,
             			"encodedImage": null
-			},
-			{
+				},
+				{
             			"id": 42,
             			"nameEvent": "Seguridad",
             			"date": "20-12-18",
@@ -232,8 +232,8 @@ Shows all events.
             			"categories": [],
             			"photo": null,
             			"encodedImage": null
-			},
-			{
+				},
+				{
             			"id": 43,
             			"nameEvent": "Java",
             			"date": "1-1-19",
@@ -243,8 +243,8 @@ Shows all events.
             			"categories": [],
             			"photo": null,
             			"encodedImage": null
-			},
-			{
+				},
+				{
             			"id": 44,
             			"nameEvent": "DAW",
             			"date": "7-7-2019",
@@ -254,8 +254,8 @@ Shows all events.
             			"categories": [],
             			"photo": null,
             			"encodedImage": null
-			},
-			{
+				},
+				{
             			"id": 45,
             			"nameEvent": "Seguridad",
             			"date": "20-12-18",
@@ -265,8 +265,8 @@ Shows all events.
             			"categories": [],
             			"photo": null,
             			"encodedImage": null
-			}
-		]
+				}
+			]
 	}
 	```
 
