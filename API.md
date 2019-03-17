@@ -14,7 +14,7 @@ The resource API has GET, POST, PUT and DELETE methods.
 http: // localhost: 8080 followed by the containt request URL.
 
 **All API queries have been preceded by /api**
-## **Every operation as addition, modification or delete is only available for admin role**
+## **Every operation as addition, modification or delete is only available for admin role.**
 
 #### LOGIN
 Resource to log in the application.
