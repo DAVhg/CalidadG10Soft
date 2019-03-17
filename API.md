@@ -14,7 +14,7 @@ The resource API has GET, POST, PUT and DELETE methods.
 http: // localhost: 8080 followed by the containt request URL.
 
 **All API queries have been preceded by /api**
-## **Every operation as addition, modification or delete is only available for admin role.**
+## **Every operation as addition, modification or deleting is only available for admin role.**
 
 #### LOGIN
 Resource to log in the application.
@@ -94,7 +94,7 @@ Resource to log out the application.
 	**Code**: 401 UNAUTHORIZED
 
 #### Pagination
-Resource search a specific page in the application.
+Resource to search a specific page in the application.
 For example searching first page after the default one in categories.
 
 * ##### URL
@@ -148,7 +148,7 @@ For example searching first page after the default one in categories.
 Available for every role.
 
 #### Categories
-Shows all categories.
+Shows first five categories.
 
 * ##### URL:
 
@@ -192,7 +192,7 @@ Shows all categories.
 	**Code**: 401 UNAUTHORIZED
 	
 #### Events  
-Shows all events.
+Shows first five events.
 
 * ##### URL:
 
@@ -276,7 +276,7 @@ Shows all events.
 	**Code**: 401 UNAUTHORIZED OR 404 NOT FOUND
 
 #### Times
-Shows all times.
+Shows first five times.
 
 * ##### URL:
 
@@ -421,7 +421,7 @@ Resource to show categories with a given name.
   
 * ##### Error Response:
 
-	**Code**: NADA
+	**Code**: NO ERRORS AVAILABLE.
 
 ### Search Event by name
 Resource to show events with a given name.
@@ -476,7 +476,7 @@ Resource to show events with a given name.
   
 * ##### Error Response:
 
-	**Code**: NADA
+	**Code**: NO ERRORS AVAILABLE. 
 
 ### Search Times by ID
 Resource to show times with a given ID
@@ -604,8 +604,8 @@ Resource asigne a selected image to an event given a certain event ID.
 	`POST`
 
 * ##### Settings:
-Unset everything in params, in headres key insert Content-Type with no value,
-select form-data, in key write "file" and in value we click and select an image.
+Unset everything in params, in headers key insert Content-Type with no value,
+select form-data, in key write "file" and in value click to select an image.
 
 * ##### Success Response:
 	
@@ -963,3 +963,6 @@ Resource to delete a time with a given ID.
 * ##### Error Response:
 
 	**Code**: 401 UNAUTHORIZED
+
+
+# That's it! Thanks for using our API.
