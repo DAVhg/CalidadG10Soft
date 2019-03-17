@@ -749,7 +749,7 @@ Resource to delete an event with a given ID.
             		"photo": null,
             		"encodedImage": null
         	},
-       		{
+       	{
             		"id": 44,
             		"nameEvent": "DAW",
             		"date": "7-7-2019",
