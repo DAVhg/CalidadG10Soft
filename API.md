@@ -412,7 +412,7 @@ Resource to show categories with a given name.
   	```
 	[
     		{
-       			 "id": 1,
+       			"id": 1,
         		"nameCategory": "Examenes"
     		}
 	]		
