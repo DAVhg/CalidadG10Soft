@@ -165,23 +165,23 @@ Shows all categories.
 			{
 	    			"id": 1,
 	    			"nameCategory": "Examenes"
-        		},
+			},
 			{
 	    			"id": 2,
 	    			"nameCategory": "Prácticas"
-        		},
+			},
 			{
 	    			"id": 3,
 	    			"nameCategory": "Apuntes"
-        		},
+			},
 			{
 	    			"id": 4,
 	    			"nameCategory": "Categoria10"
-        		},
+			},
 			{
 	    			"id": 5,
 	    			"nameCategory": "Categoria11"
-        		},
+			},
 		]	    		
 	}
 	```
